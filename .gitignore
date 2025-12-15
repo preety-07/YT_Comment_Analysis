@@ -87,3 +87,13 @@ target/
 
 # Mypy cache
 .mypy_cache/
+
+# Secrets
+mlflow-server-yt-key.pem
+
+
+/lgbm_model.pkl
+/tfidf_vectorizer.pkl
+
+# Environment file 
+/myvenv/

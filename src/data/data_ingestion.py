@@ -5,6 +5,8 @@ from sklearn.model_selection import train_test_split
 import yaml
 import logging
 
+# kaggle dataset link : https://www.kaggle.com/datasets/cosmos98/twitter-and-reddit-sentimental-analysis-dataset?select=Reddit_Data.csv
+
 # Logging configuration
 logger = logging.getLogger('data_ingestion')
 logger.setLevel(logging.DEBUG)

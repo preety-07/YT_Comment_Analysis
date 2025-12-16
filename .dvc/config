@@ -1,0 +1,4 @@
+[core]
+    remote = yt_store
+['remote "yt_store"']
+    url = s3://yt-sa-bucket

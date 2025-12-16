@@ -89,11 +89,12 @@ target/
 .mypy_cache/
 
 # Secrets
-mlflow-server-yt-key.pem
-
-
-/lgbm_model.pkl
-/tfidf_vectorizer.pkl
+/my_secrets/
 
 # Environment file 
 /myvenv/
+/experiment_info.json
+
+# DVC tracked
+/lgbm_model.pkl
+/tfidf_vectorizer.pkl

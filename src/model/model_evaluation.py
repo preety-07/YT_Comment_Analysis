@@ -127,7 +127,7 @@ def save_model_info(run_id: str, model_path: str, file_path: str) -> None:
 
 
 def main():
-    mlflow.set_tracking_uri("http://ec2-18-61-235-88.ap-south-2.compute.amazonaws.com:5000/")
+    mlflow.set_tracking_uri("http://ec2-18-61-85-110.ap-south-2.compute.amazonaws.com:5000/")
 
     mlflow.set_experiment('dvc-pipeline-runs')
     
@@ -153,7 +153,7 @@ def main():
             y_test = test_data['category'].values
 
             # Create a DataFrame for signature inference (using first few rows as an example)
-            input_example = pd.DataFrame(X_test_tfidf.toarray()[:5], columns=vectorizer.get_feature_names_out())  # <--- Added for signature
+            input_example = pd.DataFrame(X_test_tfidf.toarray()[:1], columns=vectorizer.get_feature_names_out())  # <--- Added for signature
 
             # Infer the signature
             signature = infer_signature(input_example, model.predict(X_test_tfidf[:5]))  # <--- Added for signature
